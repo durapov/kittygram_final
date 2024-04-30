@@ -9,6 +9,7 @@
   * указать год рождения питомца.полное описание, что это за проект, для чего, какие функции выполняет.
 # Использованные технологии.
 
+
 - [![Python](https://img.shields.io/badge/-Python-464646?style=flat&logo=Python&logoColor=56C0C0&color=cd5c5c)](https://www.python.org/)
 - [![Django](https://img.shields.io/badge/-Django-464646?style=flat&logo=Django&logoColor=56C0C0&color=344CC7)](https://www.djangoproject.com/)
 [![Django REST Framework](https://img.shields.io/badge/-Django%20REST%20Framework-464646?style=flat&logo=Django%20REST%20Framework&logoColor=56C0C0&color=38761D)](https://www.django-rest-framework.org/)
