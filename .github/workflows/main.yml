@@ -11,7 +11,7 @@ jobs:
         python-version: ["3.8", "3.9", "3.10"]
 
     services:
-      postg
+      postgres:
         image: postgres:13.10
         env:
           POSTGRES_USER: django_user
