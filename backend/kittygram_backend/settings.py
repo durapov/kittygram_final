@@ -1,7 +1,8 @@
 # flake8: noqa
-from django.core.management.utils import get_random_secret_key
 import os
 from pathlib import Path
+
+from django.core.management.utils import get_random_secret_key
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -10,13 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv('SECRET_KEY', get_random_secret_key())
 
-debug_env = os.getenv('DEBUG')
-if debug_env is not None:
-    DEBUG = debug_env.lower() == 'true'
-else:
-    DEBUG = False
-
-#DEBUG = os.getenv('DEBUG').lower() == 'true'
+DEBUG = os.getenv('DEBUG', 'false').lower() == 'true'
 
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', default='127.0.0.1,localhost').split(',')
 
